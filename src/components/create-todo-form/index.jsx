@@ -32,7 +32,7 @@ class CreateTodoForm extends React.Component {
         <FormGroup>
           <Label>Enter Task</Label>
           <Input 
-            placeholder='do some code'
+            placeholder='Task Title.'
             name='text'
             value={this.state.text}
             onChange={this.handleChange}
@@ -42,7 +42,7 @@ class CreateTodoForm extends React.Component {
           <Label>Enter Description</Label>
           <Input 
             type='textarea'
-            placeholder='do some code'
+            placeholder='Description of your Task.'
             name='description'
             value={this.state.description}
             onChange={this.handleChange}

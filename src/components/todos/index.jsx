@@ -11,7 +11,7 @@ class Todos extends React.Component {
     todos: [
       {
         id: "1",
-        text: "main todo text",
+        text: "Highlight the selected Menu when clicked",
         description: "simple description",
         time: new Date(),
         isComplete: false,
@@ -19,7 +19,7 @@ class Todos extends React.Component {
       },
       {
         id: "2",
-        text: "Eyakub",
+        text: "Try different design pattern",
         description: "simple description",
         time: new Date(),
         isComplete: false,
