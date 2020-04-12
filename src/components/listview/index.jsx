@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { ListGroup, ListGroupItem, CustomInput, Button } from "reactstrap";
 
 // List item component
@@ -27,17 +27,16 @@ const ListItem = ({ todo, toggleSelect, toggleComplete }) => {
   );
 };
 
-
 ListItem.propTypes = {
   todo: PropTypes.object.isRequired,
   toggleComplete: PropTypes.func.isRequired,
-  togleSelect: PropTypes.func.isRequired
-}
+  toggleSelect: PropTypes.func.isRequired,
+};
 
-const ListView = ({todos, toggleSelect, toggleComplete}) => {
+const ListView = ({ todos, toggleSelect, toggleComplete }) => {
   return (
     <ListGroup>
-      {todos.map(todo=>(
+      {todos.map((todo) => (
         <ListItem
           key={todo.id}
           todo={todo}
@@ -46,13 +45,13 @@ const ListView = ({todos, toggleSelect, toggleComplete}) => {
         />
       ))}
     </ListGroup>
-  )
-}
+  );
+};
 
 ListView.propTypes = {
-  todo: PropTypes.object.isRequired,
+  todos: PropTypes.object.isRequired,
   toggleComplete: PropTypes.func.isRequired,
-  togleSelect: PropTypes.func.isRequired
-}
+  toggleSelect: PropTypes.func.isRequired,
+};
 
 export default ListView;
